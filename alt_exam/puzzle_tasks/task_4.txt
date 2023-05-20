@@ -1,0 +1,39 @@
+Дом №1: Englishman coffe horses Rothmans white 
+Дом №2: Dane tea cats Dunhill blue 
+Дом №3: German milk fish Marlboro red 
+Дом №4: Sweden water birds Philip Morris yellow 
+Дом №5: Norwegian beer dogs Pall Mall green 
+1. В доме №5 пьют пиво
+2. Слева от дома, в котором курят Marlboro, находится дом синего цвета
+3. Слева от дома, в котором курят Pall Mall, находится дом, в котором содержат птиц
+4. В доме №1 содержат лошадей
+5. Слева от дома зеленого цвета находится дом, в котором курят Philip Morris
+6. Дом, в котором живет англичанин, и дом синего цвета находятся по соседству
+7. Слева от дома, в котором пьют воду, находится дом красного цвета
+8. В доме №1 пьют кофе
+9. Слева от дома, в котором курят Philip Morris, находится дом, в котором живет немец
+10. Дом синего цвета и дом, в котором курят Rothmans, находятся по соседству
+11. В доме, в котором содержат рыбок, пьют молоко
+12. Слева от дома, в котором содержат кошек, находится дом белого цвета
+13. В доме, в котором пьют чай, курят Dunhill
+14. Слева от дома, в котором живет норвежец, находится дом желтого цвета
+15. В доме, в котором живет датчанин, пьют чай
+16.
+17.
+18.
+
+eq(House(drink="beer"), houses[4]),
+righto(House(cigarettes="Marlboro"), House(color="blue"), houses),
+righto(House(cigarettes="Pall Mall"), House(animal="birds"), houses),
+eq(House(animal="horses"), houses[0]),
+righto(House(color="green"), House(cigarettes="Philip Morris"), houses),
+neighbors(House(nationality="Englishman"), House(color="blue"), houses),
+righto(House(drink="water"), House(color="red"), houses),
+eq(House(drink="coffe"), houses[0]),
+righto(House(cigarettes="Philip Morris"), House(nationality="German"), houses),
+neighbors(House(color="blue"), House(cigarettes="Rothmans"), houses),
+membero(House(animal="fish", drink="milk"), houses),
+neighbors(House(animal="cats"), House(color="white"), houses),
+membero(House(drink="tea", cigarettes="Dunhill"), houses),
+righto(House(nationality="Norwegian"), House(color="yellow"), houses),
+membero(House(nationality="Dane", drink="tea"), houses),   

@@ -1,0 +1,43 @@
+Дом №1: German tea fish Pall Mall blue 
+Дом №2: Sweden water dogs Marlboro yellow 
+Дом №3: Norwegian beer horses Dunhill white 
+Дом №4: Dane coffe cats Philip Morris red 
+Дом №5: Englishman milk birds Rothmans green 
+1. Дом, в котором живет швед, и дом, в котором курят Pall Mall, находятся по соседству.
+2. Слева от дома, в котором живет датчанин, находится дом, в котором пьют пиво.
+3. Дом белого цвета и дом, в котором пьют кофе, находятся по соседству.
+4. В доме №2 курят Marlboro.
+5. Дом №3 белого цвета.
+6. Слева от дома, в котором содержат птиц, находится дом, в котором курят Philip Morris.
+7. В доме №4 курят Philip Morris.
+8. Слева от дома, в котором пьют кофе, находится дом, в котором курят Dunhill.
+9. В доме, в котором живет норвежец, курят Dunhill.
+10. Дом, в котором живет немец, и дом, в котором пьют воду, находятся по соседству.
+11. Слева от дома красного цвета находится дом, в котором содержат лошадей.
+12. Слева от дома, в котором содержат лошадей, находится дом желтого цвета.
+13. Дом, в котором пьют молоко, и дом, в котором содержат кошек, находятся по соседству.
+14. Слева от дома, в котором курят Marlboro, находится дом синего цвета.
+15. Слева от дома, в котором курят Dunhill, находится дом, в котором пьют воду.
+16. Дом, в котором курят Pall Mall, и дом, в котором содержат собак, находятся по соседству.
+17. Слева от дома зеленого цвета находится дом, в котором содержат кошек.
+18. В доме №4 живет датчанин.
+19. В доме, в котором пьют молоко, курят Rothmans.
+neighbors(House(nationality="Sweden"), House(cigarettes="Pall Mall"), houses),
+righto(House(nationality="Dane"), House(drink="beer"), houses),
+neighbors(House(color="white"), House(drink="coffe"), houses),
+eq(House(cigarettes="Marlboro"), houses[1]),
+eq(House(color="white"), houses[2]),
+righto(House(animal="birds"), House(cigarettes="Philip Morris"), houses),
+eq(House(cigarettes="Philip Morris"), houses[3]),
+righto(House(drink="coffe"), House(cigarettes="Dunhill"), houses),
+membero(House(nationality="Norwegian", cigarettes="Dunhill"), houses),
+neighbors(House(nationality="German"), House(drink="water"), houses),
+righto(House(color="red"), House(animal="horses"), houses),
+righto(House(animal="horses"), House(color="yellow"), houses),
+neighbors(House(drink="milk"), House(animal="cats"), houses),
+righto(House(cigarettes="Marlboro"), House(color="blue"), houses),
+righto(House(cigarettes="Dunhill"), House(drink="water"), houses),
+neighbors(House(cigarettes="Pall Mall"), House(animal="dogs"), houses),
+righto(House(color="green"), House(animal="cats"), houses),
+eq(House(nationality="Dane"), houses[3]),
+membero(House(drink="milk", cigarettes="Rothmans"), houses),

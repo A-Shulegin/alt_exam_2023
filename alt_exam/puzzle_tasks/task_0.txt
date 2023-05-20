@@ -1,0 +1,44 @@
+Дом №1: Norwegian water cats Dunhill yellow 
+Дом №2: Dane tea horses Rothmans blue 
+Дом №3: Englishman milk birds Pall Mall red 
+Дом №4: German coffe fish Marlboro green 
+Дом №5: Sweden beer dogs Philip Morris white 
+1. Норвежец живет в первом доме
+2. Англичанин живет в красном доме
+3. Зеленый дом находится слева от белого
+4. Датчанин пьет чай
+5. Тот, кто курит Rothmans, живет рядом с тем, кто выращивает кошек
+6. Тот, кто живет в желтом доме, курит Dunhill
+7. Немец курит Marlboro
+8. Тот, кто живет в центре, пьет молоко
+9. Сосед того, кто курит Rothmans, пьет воду
+10. Тот, кто курит Pall Mall, выращивает птиц
+11. Швед выращивает собак
+12. Норвежец живет рядом с синим домом
+13. Тот, кто выращивает лошадей живет в  си​​​нем доме
+14. Тот, кто курит Philip Morris, пьет пиво
+15. В зеленом доме пьют кофе
+16.
+17.
+18.
+
+eq(House(nationality="Norwegian"), houses[0]),
+membero(House(nationality="Englishman", color="red"), houses),
+righto(House(color="white"), House(color="green"), houses),
+membero(House(nationality="Dane", drink="tea"), houses),
+neighbors(House(cigarettes="Rothmans"), House(animal="cats"), houses),
+membero(House(color="yellow", cigarettes="Dunhill"), houses),
+membero(House(nationality="German", cigarettes="Marlboro"), houses),
+eq(House(drink="milk"), houses[2]),
+neighbors(House(cigarettes="Rothmans"), House(drink="water"), houses),
+membero(House(animal="birds", cigarettes="Pall Mall"), houses),
+membero(House(nationality="Sweden", animal="dogs"), houses),
+neighbors(House(nationality="Norwegian"), House(color="blue"), houses),   
+membero(House(color="blue", animal="horses"), houses),   
+membero(House(cigarettes="Philip Morris", drink="beer"), houses),
+membero(House(color="green", drink="coffe"), houses),
+    
+    
+    
+    
+    

@@ -1,0 +1,38 @@
+Дом №1: Norwegian beer horses Rothmans yellow 
+Дом №2: Sweden water birds Philip Morris green 
+Дом №3: Dane milk dogs Pall Mall blue 
+Дом №4: Englishman coffe cats Marlboro white 
+Дом №5: German tea fish Dunhill red 
+1. В доме №1 содержат лошадей
+2. Дом, в котором живет немец, и дом, в котором пьют кофе, находятся по соседству
+3. Слева от дома, в котором содержат птиц, находится дом, в котором живет норвежец
+4. Слева от дома, в котором живет англичанин, находится дом синего цвета
+5. Дом, в котором пьют пиво, и дом, в котором живет швед, находятся по соседству
+6. Дом, в котором курят Rothmans, и дом зеленого цвета находятся по соседству
+7. Дом, в котором курят Marlboro, и дом, в котором содержат рыбок, находятся по соседству
+8. Слева от дома, в котором живет англичанин, находится дом, в котором содержат собак
+9. Слева от дома, в котором курят Philip Morris, находится дом желтого цвета
+10. Слева от дома, в котором содержат кошек, находится дом, в котором курят Pall Mall
+11. В доме, в котором содержат рыбок, пьют чай
+12. Слева от дома белого цвета находится дом, в котором пьют молоко
+13. В доме №1 пьют пиво
+14. В доме, в котором живет датчанин, содержат собак
+15.
+16.
+17.
+18.
+
+eq(House(animal="horses"), houses[0]),
+neighbors(House(nationality="German"), House(drink="coffe"), houses),
+righto(House(animal="birds"), House(nationality="Norwegian"), houses),
+righto(House(nationality="Englishman"), House(color="blue"), houses),
+neighbors(House(drink="beer"), House(nationality="Sweden"), houses),
+neighbors(House(cigarettes="Rothmans"), House(color="green"), houses),
+neighbors(House(cigarettes="Marlboro"), House(animal="fish"), houses),
+righto(House(nationality="Englishman"), House(animal="dogs"), houses),
+righto(House(cigarettes="Philip Morris"), House(color="yellow"), houses),
+righto(House(animal="cats"), House(cigarettes="Pall Mall"), houses),
+membero(House(animal="fish", drink="tea"), houses),
+righto(House(color="white"), House(drink="milk"), houses),
+eq(House(drink="beer"), houses[0]),
+membero(House(nationality="Dane", animal="dogs"), houses),

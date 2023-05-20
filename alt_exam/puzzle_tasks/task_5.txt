@@ -1,0 +1,39 @@
+Дом №1: Englishman tea birds Rothmans blue 
+Дом №2: Norwegian water horses Marlboro yellow 
+Дом №3: Dane coffe cats Dunhill red 
+Дом №4: Sweden milk fish Pall Mall green 
+Дом №5: German beer dogs Philip Morris white 
+1. Дом синего цвета и дом, в котором живет норвежец, находятся по соседству
+2. Слева от дома, в котором живет немец, находится дом, в котором курят Pall Mall
+3. Дом, в котором живет швед, и дом, в котором содержат собак, находятся по соседству
+4. В доме №3 пьют кофе
+5. Дом, в котором содержат кошек, и дом, в котором живет норвежец, находятся по соседству
+6. Слева от дома, в котором пьют пиво, находится дом, в котором содержат рыбок
+7. Дом белого цвета и дом, в котором пьют молоко, находятся по соседству
+8. Слева от дома, в котором живет датчанин, находится дом, в котором содержат лошадей
+9. Слева от дома желтого цвета находится дом, в котором содержат птиц
+10. Дом, в котором содержат кошек, и дом, в котором пьют молоко, находятся по соседству
+11. В доме, в котором курят Rothmans, живет англичанин
+12. Слева от дома, в котором курят Dunhill, находится дом, в котором пьют воду
+13. В доме красного цвета живет датчанин
+14. Слева от дома, в котором курят Philip Morris, находится дом, в котором живет швед
+15. Слева от дома желтого цвета находится дом, в котором пьют чай
+16.
+17.
+18.
+
+neighbors(House(color="blue"), House(nationality="Norwegian"), houses),
+righto(House(nationality="German"), House(cigarettes="Pall Mall"), houses),
+neighbors(House(nationality="Sweden"), House(animal="dogs"), houses),
+eq(House(drink="coffe"), houses[2]),
+neighbors(House(animal="cats"), House(nationality="Norwegian"), houses),
+righto(House(drink="beer"), House(animal="fish"), houses),
+neighbors(House(color="white"), House(drink="milk"), houses),
+righto(House(nationality="Dane"), House(animal="horses"), houses),
+righto(House(color="yellow"), House(animal="birds"), houses),
+neighbors(House(animal="cats"), House(drink="milk"), houses),
+membero(House(cigarettes="Rothmans", nationality="Englishman"), houses),
+righto(House(cigarettes="Dunhill"), House(drink="water"), houses),
+membero(House(nationality="Dane", color="red"), houses),
+righto(House(cigarettes="Philip Morris"), House(nationality="Sweden"), houses),
+righto(House(color="yellow"), House(drink="tea"), houses),   

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Загадка Эйнштейна про дома">
+    <meta name="description" content="">
+    <title>Загадка Эйнштейна</title>
+    <link rel="stylesheet" href="css/puzzle_1.css" media="screen">
+    <link rel="stylesheet" href="css/puzzle_2.css" media="screen">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js">
+    </script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  
+  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-15d8"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-align-center u-clearfix u-section-1" src="" id="sec-209a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Загадка Эйнштейна про дома</h2>
+        <a href="index.html" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Назад</a>
+        <a href="puzzle_info.html" class="u-border-hover-palette-2-base u-border-none u-btn u-button-style u-none u-btn-6"><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-1"><img src="images/189665-103cab79.png" alt=""></span></a> 
+        <p class="u-text u-text-2"> 5 разных человек проживают в 5 разных домах разного цвета, курят 5 разных марок сигарет, выращивают 5 разных видов животных, пьют 5 разных видов напитков.<br>
+        </p>
+        <h3 class="u-text u-text-3" id="current_task">Задача №1</h3>
+        <div class="u-align-center u-table u-table-responsive u-table-1">
+          <form name="search">
+            <table class="u-table-entity" name="table">
+              <colgroup>
+                <col width="16.69%">
+                <col width="16.69%">
+                <col width="16.69%">
+                <col width="16.69%">
+                <col width="16.69%">
+                <col width="16.69%">
+              </colgroup>
+              <thead class="u-black u-table-header u-table-header-1">
+                <tr style="height: 82px;">
+                  <th class="u-align-center u-border-1 u-border-black u-table-cell">Номер дома</th>
+                  <th class="u-align-center u-border-1 u-border-black u-table-cell">1 </th>
+                  <th class="u-align-center u-border-1 u-border-black u-table-cell u-table-cell-3">2 </th>
+                  <th class="u-align-center u-border-1 u-border-black u-table-cell u-table-cell-4">3 </th>
+                  <th class="u-align-center u-border-1 u-border-black u-table-cell u-table-cell-5">4</th>
+                  <th class="u-align-center u-border-1 u-border-black u-table-cell">5</th>
+                </tr>
+              </thead>
+              <tbody class="u-align-center u-table-body">
+                <tr style="height: 82px;">
+                  <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-7">Национальность</td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_1_nationality">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Englishman">Англичанин</option>
+                        <option value="Dane">Датчанин</option>
+                        <option value="German">Немец</option>
+                        <option value="Norwegian">Норвежец</option>
+                        <option value="Sweden">Швед</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_2_nationality">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Englishman">Англичанин</option>
+                        <option value="Dane">Датчанин</option>
+                        <option value="German">Немец</option>
+                        <option value="Norwegian">Норвежец</option>
+                        <option value="Sweden">Швед</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_3_nationality">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Englishman">Англичанин</option>
+                        <option value="Dane">Датчанин</option>
+                        <option value="German">Немец</option>
+                        <option value="Norwegian">Норвежец</option>
+                        <option value="Sweden">Швед</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_4_nationality">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Englishman">Англичанин</option>
+                        <option value="Dane">Датчанин</option>
+                        <option value="German">Немец</option>
+                        <option value="Norwegian">Норвежец</option>
+                        <option value="Sweden">Швед</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_5_nationality">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Englishman">Англичанин</option>
+                        <option value="Dane">Датчанин</option>
+                        <option value="German">Немец</option>
+                        <option value="Norwegian">Норвежец</option>
+                        <option value="Sweden">Швед</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr style="height: 82px;">
+                  <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-13">Цвет дома</td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_1_color">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="white">Белый</option>
+                        <option value="yellow">Желтый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_2_color">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="white">Белый</option>
+                        <option value="yellow">Желтый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_3_color">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="white">Белый</option>
+                        <option value="yellow">Желтый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_4_color">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="white">Белый</option>
+                        <option value="yellow">Желтый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_5_color">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="white">Белый</option>
+                        <option value="yellow">Желтый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr style="height: 82px;">
+                  <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-19">Животное</td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_1_animal">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="birds">Птицы</option>
+                        <option value="fish">Рыбки</option>
+                        <option value="horses">Лошади</option>
+                        <option value="dogs">Собаки</option>
+                        <option value="cats">Кошки</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_2_animal">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="birds">Птицы</option>
+                        <option value="fish">Рыбки</option>
+                        <option value="horses">Лошади</option>
+                        <option value="dogs">Собаки</option>
+                        <option value="cats">Кошки</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_3_animal">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="birds">Птицы</option>
+                        <option value="fish">Рыбки</option>
+                        <option value="horses">Лошади</option>
+                        <option value="dogs">Собаки</option>
+                        <option value="cats">Кошки</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_4_animal"> 
+                        <option value="noanswer">Выбрать</option>
+                        <option value="birds">Птицы</option>
+                        <option value="fish">Рыбки</option>
+                        <option value="horses">Лошади</option>
+                        <option value="dogs">Собаки</option>
+                        <option value="cats">Кошки</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_5_animal">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="birds">Птицы</option>
+                        <option value="fish">Рыбки</option>
+                        <option value="horses">Лошади</option>
+                        <option value="dogs">Собаки</option>
+                        <option value="cats">Кошки</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr style="height: 82px;">
+                  <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-25">Напиток</td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_1_drink">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="water">Вода</option>
+                        <option value="tea">Чай</option>
+                        <option value="milk">Молоко</option>
+                        <option value="coffe">Кофе</option>
+                        <option value="beer">Пиво</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_2_drink">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="water">Вода</option>
+                        <option value="tea">Чай</option>
+                        <option value="milk">Молоко</option>
+                        <option value="coffe">Кофе</option>
+                        <option value="beer">Пиво</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_3_drink">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="water">Вода</option>
+                        <option value="tea">Чай</option>
+                        <option value="milk">Молоко</option>
+                        <option value="coffe">Кофе</option>
+                        <option value="beer">Пиво</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_4_drink">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="water">Вода</option>
+                        <option value="tea">Чай</option>
+                        <option value="milk">Молоко</option>
+                        <option value="coffe">Кофе</option>
+                        <option value="beer">Пиво</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_5_drink">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="water">Вода</option>
+                        <option value="tea">Чай</option>
+                        <option value="milk">Молоко</option>
+                        <option value="coffe">Кофе</option>
+                        <option value="beer">Пиво</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr style="height: 82px;">
+                  <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-31">Сигареты</td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_1_cigarettes">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Rothmans">Rothmans</option>
+                        <option value="Dunhill">Dunhill</option>
+                        <option value="Pall Mall">Pall Mall</option>
+                        <option value="Philip Morris">Philip Morris</option>
+                        <option value="Marlboro">Marlboro</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_2_cigarettes">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Rothmans">Rothmans</option>
+                        <option value="Dunhill">Dunhill</option>
+                        <option value="Pall Mall">Pall Mall</option>
+                        <option value="Philip Morris">Philip Morris</option>
+                        <option value="Marlboro">Marlboro</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_3_cigarettes">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Rothmans">Rothmans</option>
+                        <option value="Dunhill">Dunhill</option>
+                        <option value="Pall Mall">Pall Mall</option>
+                        <option value="Philip Morris">Philip Morris</option>
+                        <option value="Marlboro">Marlboro</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_4_cigarettes">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Rothmans">Rothmans</option>
+                        <option value="Dunhill">Dunhill</option>
+                        <option value="Pall Mall">Pall Mall</option>
+                        <option value="Philip Morris">Philip Morris</option>
+                        <option value="Marlboro">Marlboro</option>
+                      </select>
+                    </span>
+                  </td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell">
+                    <span>
+                      <select id="house_5_cigarettes">
+                        <option value="noanswer">Выбрать</option>
+                        <option value="Rothmans">Rothmans</option>
+                        <option value="Dunhill">Dunhill</option>
+                        <option value="Pall Mall">Pall Mall</option>
+                        <option value="Philip Morris">Philip Morris</option>
+                        <option value="Marlboro">Marlboro</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2" onclick="answer();">Ответ</button>
+            <button type="button" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3" onclick="check();">Проверить</button>
+            <button type="button" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-5" onclick="next_task()">Новая задача</button>
+          </form>
+        </div>
+        <ul class="u-text u-text-4">
+          <li data-u-slide-to="3" class="show" id="rule_0">Норвежец живет в первом доме</li>
+          <li data-u-slide-to="4" class="show" id="rule_1">Англичанин живет в красном доме</li>
+          <li data-u-slide-to="5" class="show" id="rule_2">Зеленый дом находится слева от белого</li>
+          <li data-u-slide-to="6" class="show" id="rule_3">Датчанин пьет чай</li>
+          <li data-u-slide-to="7" class="show" id="rule_4">Тот, кто курит Rothmans, живет рядом с тем, кто выращивает кошек</li>
+          <li data-u-slide-to="8" class="show" id="rule_5">Тот, кто живет в желтом доме, курит Dunhill</li>
+          <li data-u-slide-to="9" class="show" id="rule_6">Немец курит Marlboro</li>
+          <li data-u-slide-to="10" class="show" id="rule_7">Тот, кто живет в центре, пьет молоко</li>
+          <li data-u-slide-to="11" class="show" id="rule_8">Сосед того, кто курит Rothmans, пьет воду</li>
+          <li data-u-slide-to="12" class="show" id="rule_9">Тот, кто курит Pall Mall, выращивает птиц</li>
+          <li data-u-slide-to="13" class="show" id="rule_10">Швед выращивает собак</li>
+          <li data-u-slide-to="14" class="show" id="rule_11">Норвежец живет рядом с синим домом</li>
+          <li data-u-slide-to="15" class="show" id="rule_12">Тот, кто выращивает лошадей живет в си​​​нем доме</li>
+          <li data-u-slide-to="16" class="show" id="rule_13">Тот, кто курит Philip Morris, пьет пиво</li>
+          <li data-u-slide-to="17" class="show" id="rule_14">В зеленом доме пьют кофе</li>
+          <li data-u-slide-to="18" class="hide" id="rule_15"></li>
+          <li data-u-slide-to="19" class="hide" id="rule_16"></li>
+          <li data-u-slide-to="20" class="hide" id="rule_17"></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a887"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://habr.com/ru/companies/hsespb/articles/441114/"><h4>Реляционное программирование: боль, интерес и снова боль</h4></a>
+      </div></footer>
+  <script>
+  var rule_list = [
+    [
+      "Норвежец живет в первом доме",
+      "Англичанин живет в красном доме",
+      "Зеленый дом находится слева от белого",
+      "Датчанин пьет чай",
+      "Тот, кто курит Rothmans, живет рядом с тем, кто выращивает кошек",
+      "Тот, кто живет в желтом доме, курит Dunhill",
+      "Немец курит Marlboro",
+      "Тот, кто живет в центре, пьет молоко",
+      "Сосед того, кто курит Rothmans, пьет воду",
+      "Тот, кто курит Pall Mall, выращивает птиц",
+      "Швед выращивает собак",
+      "Норвежец живет рядом с синим домом",
+      "Тот, кто выращивает лошадей живет в  си​​​нем доме",
+      "Тот, кто курит Philip Morris, пьет пиво",
+      "В зеленом доме пьют кофе",
+      "",
+      "",
+      ""
+    ],
+    [
+      "В доме белого цвета живет датчанин",
+      "В доме красного цвета живет швед",
+      "Дом, в котором содержат рыбок, и дом, в котором курят Dunhill, находятся по соседству",
+      "В доме, в котором пьют пиво, курят Rothmans",
+      "В доме №5 живет норвежец",
+      "В доме, в котором пьют воду, курят Marlboro",
+      "Слева от дома, в котором живет англичанин, находится дом, в котором курят Pall Mall",
+      "В доме №1 пьют чай",
+      "Слева от дома, в котором содержат кошек, находится дом синего цвета",
+      "В доме зеленого цвета пьют воду",
+      "В доме №2 живет датчанин",
+      "В доме, в котором содержат лошадей, живет датчанин",
+      "Дом синего цвета и дом, в котором содержат собак, находятся по соседству",
+      "Слева от дома зеленого цвета находится дом, в котором содержат птиц",
+      "В доме №1 живет швед",
+      "Слева от дома желтого цвета находится дом, в котором живет датчанин",
+      "В доме, в котором содержат собак, пьют кофе",
+      ""
+    ],
+    [
+      "В доме №1 содержат лошадей",
+      "Дом, в котором живет немец, и дом, в котором пьют кофе, находятся по соседству",
+      "Слева от дома, в котором содержат птиц, находится дом, в котором живет норвежец",
+      "Слева от дома, в котором живет англичанин, находится дом синего цвета",
+      "Дом, в котором пьют пиво, и дом, в котором живет швед, находятся по соседству",
+      "Дом, в котором курят Rothmans, и дом зеленого цвета находятся по соседству",
+      "Дом, в котором курят Marlboro, и дом, в котором содержат рыбок, находятся по соседству",
+      "Слева от дома, в котором живет англичанин, находится дом, в котором содержат собак",
+      "Слева от дома, в котором курят Philip Morris, находится дом желтого цвета",
+      "Слева от дома, в котором содержат кошек, находится дом, в котором курят Pall Mall",
+      "В доме, в котором содержат рыбок, пьют чай",
+      "Слева от дома белого цвета находится дом, в котором пьют молоко",
+      "В доме №1 пьют пиво",
+      "В доме, в котором живет датчанин, содержат собак",
+      "",
+      "",
+      "",
+      ""
+    ], 
+    [
+      "В доме №1 пьют молоко",
+      "Слева от дома, в котором содержат птиц, находится дом, в котором пьют кофе",
+      "Дом, в котором живет швед, и дом зеленого цвета находятся по соседству",
+      "В доме желтого цвета живет норвежец",
+      "В доме, в котором курят Marlboro, пьют кофе",
+      "Слева от дома, в котором содержат кошек, находится дом синего цвета",
+      "Дом белого цвета и дом, в котором содержат лошадей, находятся по соседству",
+      "В доме красного цвета содержат лошадей",
+      "Слева от дома, в котором живет датчанин, находится дом, в котором курят Philip Morris",
+      "В доме желтого цвета курят Pall Mall",
+      "Дом, в котором пьют пиво, и дом, в котором содержат собак, находятся по соседству",
+      "Слева от дома красного цвета находится дом, в котором содержат рыбок",
+      "Дом, в котором курят Philip Morris, и дом, в котором содержат лошадей, находятся по соседству",
+      "Дом зеленого цвета и дом, в котором курят Rothmans, находятся по соседству",
+      "Дом, в котором живет немец, и дом, в котором пьют воду, находятся по соседству",
+      "Дом, в котором курят Rothmans, и дом, в котором живет норвежец, находятся по соседству",
+      "В доме, в котором курят Dunhill, живет датчанин",
+      "Дом, в котором курят Philip Morris, и дом, в котором пьют пиво, находятся по соседству"
+    ],
+    [
+      "В доме №5 пьют пиво",
+      "Слева от дома, в котором курят Marlboro, находится дом синего цвета",
+      "Слева от дома, в котором курят Pall Mall, находится дом, в котором содержат птиц",
+      "В доме №1 содержат лошадей",
+      "Слева от дома зеленого цвета находится дом, в котором курят Philip Morris",
+      "Дом, в котором живет англичанин, и дом синего цвета находятся по соседству",
+      "Слева от дома, в котором пьют воду, находится дом красного цвета",
+      "В доме №1 пьют кофе",
+      "Слева от дома, в котором курят Philip Morris, находится дом, в котором живет немец",
+      "Дом синего цвета и дом, в котором курят Rothmans, находятся по соседству",
+      "В доме, в котором содержат рыбок, пьют молоко",
+      "Слева от дома, в котором содержат кошек, находится дом белого цвета",
+      "В доме, в котором пьют чай, курят Dunhill",
+      "Слева от дома, в котором живет норвежец, находится дом желтого цвета",
+      "В доме, в котором живет датчанин, пьют чай",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Дом синего цвета и дом, в котором живет норвежец, находятся по соседству",
+      "Слева от дома, в котором живет немец, находится дом, в котором курят Pall Mall",
+      "Дом, в котором живет швед, и дом, в котором содержат собак, находятся по соседству",
+      "В доме №3 пьют кофе",
+      "Дом, в котором содержат кошек, и дом, в котором живет норвежец, находятся по соседству",
+      "Слева от дома, в котором пьют пиво, находится дом, в котором содержат рыбок",
+      "Дом белого цвета и дом, в котором пьют молоко, находятся по соседству",
+      "Слева от дома, в котором живет датчанин, находится дом, в котором содержат лошадей",
+      "Слева от дома желтого цвета находится дом, в котором содержат птиц",
+      "Дом, в котором содержат кошек, и дом, в котором пьют молоко, находятся по соседству",
+      "В доме, в котором курят Rothmans, живет англичанин",
+      "Слева от дома, в котором курят Dunhill, находится дом, в котором пьют воду",
+      "В доме красного цвета живет датчанин",
+      "Слева от дома, в котором курят Philip Morris, находится дом, в котором живет швед",
+      "Слева от дома желтого цвета находится дом, в котором пьют чай",
+      "",
+      "",
+      ""
+    ],
+    [
+      "В доме №5 пьют молоко",
+      "Дом, в котором пьют чай, и дом, в котором курят Philip Morris, находятся по соседству",
+      "В доме красного цвета курят Dunhill",
+      "В доме №5 живет норвежец",
+      "Дом желтого цвета и дом, в котором живет швед, находятся по соседству",
+      "В доме №3 живет англичанин",
+      "В доме, в котором содержат птиц, курят Pall Mall",
+      "Дом №1 белого цвета",
+      "Слева от дома зеленого цвета находится дом, в котором пьют кофе",
+      "Дом, в котором курят Dunhill, и дом, в котором содержат птиц, находятся по соседству",
+      "В доме синего цвета курят Rothmans",
+      "Дом, в котором содержат собак, и дом, в котором курят Marlboro, находятся по соседству",
+      "В доме, в котором содержат рыбок, курят Rothmans",
+      "Дом синего цвета и дом, в котором курят Dunhill, находятся по соседству",
+      "В доме зеленого цвета содержат лошадей",
+      "Слева от дома красного цвета находится дом, в котором пьют воду",
+      "В доме, в котором живет немец, курят Pall Mall",
+      ""
+    ],
+    [
+      "Дом синего цвета и дом, в котором живет норвежец, находятся по соседству",
+      "Дом, в котором живет швед, и дом, в котором содержат собак, находятся по соседству",
+      "В доме №3 пьют кофе",
+      "Дом, в котором содержат кошек, и дом, в котором живет норвежец, находятся по соседству",
+      "Слева от дома, в котором пьют пиво, находится дом, в котором содержат рыбок",
+      "Дом белого цвета и дом, в котором пьют молоко, находятся по соседству",
+      "Слева от дома, в котором живет датчанин, находится дом, в котором содержат лошадей",
+      "Слева от дома желтого цвета находится дом, в котором содержат птиц",
+      "Дом, в котором содержат кошек, и дом, в котором пьют молоко, находятся по соседству",
+      "В доме, в котором курят Rothmans, живет англичанин",
+      "Слева от дома, в котором курят Dunhill, находится дом, в котором пьют воду",
+      "В доме красного цвета живет датчанин",
+      "Слева от дома, в котором курят Philip Morris, находится дом, в котором живет швед",
+      "Слева от дома, в котором живет немец, находится дом, в котором курят Pall Mall",
+      "Слева от дома желтого цвета находится дом, в котором пьют чай",
+      "",
+      "",
+      ""
+    ]
+  ]
+  var right_answers = [
+    [
+      ["Norwegian", "yellow", "cats", "water", "Dunhill"],
+      ["Dane", "blue", "horses", "tea", "Rothmans"],
+      ["Englishman", "red", "birds", "milk", "Pall Mall"],
+      ["German", "green", "fish", "coffe", "Marlboro"],
+      ["Sweden", "white", "dogs", "beer", "Philip Morris"]
+    ],
+    [
+      ["Sweden", "red", "fish", "tea", "Philip Morris"],
+      ["Dane", "white", "horses", "milk", "Dunhill"],
+      ["German", "yellow", "dogs", "coffe", "Pall Mall"],
+      ["Englishman", "blue", "birds", "beer", "Rothmans"],
+      ["Norwegian", "green", "cats", "water", "Marlboro"]
+    ],
+    [
+      ["Norwegian", "yellow", "horses", "beer", "Rothmans"],
+      ["Sweden", "green", "birds", "water", "Philip Morris"],
+      ["Dane", "blue", "dogs", "milk", "Pall Mall"],
+      ["Englishman", "white", "cats", "coffe", "Marlboro"],
+      ["German", "red", "fish", "tea", "Dunhill"]
+    ],
+    [
+      ["Englishman", "white", "fish", "milk", "Philip Morris"],
+      ["Dane", "red", "horses", "beer", "Dunhill"],
+      ["German", "green", "dogs", "coffe", "Marlboro"],
+      ["Sweden", "blue", "birds", "water", "Rothmans"],
+      ["Norwegian", "yellow", "cats", "tea", "Pall Mall"]
+    ],    
+    [
+      ["Englishman", "white", "horses", "coffe", "Rothmans"],
+      ["Dane", "blue", "cats", "tea", "Dunhill"],
+      ["German", "red", "fish", "milk", "Marlboro"],
+      ["Sweden", "yellow", "birds", "water", "Philip Morris"],
+      ["Norwegian", "green", "dogs", "beer", "Pall Mall"]
+    ], 
+    [
+      ["Englishman", "blue", "birds", "tea", "Rothmans"],
+      ["Norwegian", "yellow", "horses", "water", "Marlboro"],
+      ["Dane", "red", "cats", "coffe", "Dunhill"],
+      ["Sweden", "green", "fish", "milk", "Pall Mall"],
+      ["German", "white", "dogs", "beer", "Philip Morris"]
+    ],     
+    [
+      ["German", "white", "birds", "water", "Pall Mall"],
+      ["Dane", "red", "cats", "beer", "Dunhill"],
+      ["Englishman", "blue", "fish", "coffe", "Rothmans"],
+      ["Sweden", "green", "horses", "tea", "Marlboro"],
+      ["Norwegian", "yellow", "dogs", "milk", "Philip Morris"]
+    ],
+    [
+      ["Englishman", "blue", "birds", "tea", "Rothmans"],
+      ["Norwegian", "yellow", "horses", "water", "Marlboro"],
+      ["Dane", "red", "cats", "coffe", "Dunhill"],
+      ["Sweden", "green", "fish", "milk", "Pall Mall"],
+      ["German", "white", "dogs", "beer", "Philip Morris"]
+    ]
+  ]
+
+  function check() {
+    var flag = true;
+    let current_task = document.getElementById("current_task").textContent;
+    current_task = (Number(current_task[current_task.length - 1]) - 1) % 8
+    let right_answer = right_answers[current_task]
+    let user_answer = [
+      ["0", "0", "0", "0", "0"],
+      ["0", "0", "0", "0", "0"],
+      ["0", "0", "0", "0", "0"],
+      ["0", "0", "0", "0", "0"],
+      ["0", "0", "0", "0", "0"]
+    ]
+    for (let i = 0; i < 5; i++){
+      var user_id = "house_" + (i+1);
+      var nationality = document.getElementById(user_id+"_nationality");
+      nationality = nationality.options[nationality.selectedIndex].value;
+      var color = document.getElementById(user_id+"_color");
+      color = color.options[color.selectedIndex].value;
+      var animal = document.getElementById(user_id+"_animal");
+      animal = animal.options[animal.selectedIndex].value;
+      var drink = document.getElementById(user_id+"_drink");
+      drink = drink.options[drink.selectedIndex].value;
+      var cigarettes = document.getElementById(user_id+"_cigarettes");
+      cigarettes = cigarettes.options[cigarettes.selectedIndex].value;
+      user_answer[i][0] = nationality;
+      user_answer[i][1] = color;
+      user_answer[i][2] = animal;
+      user_answer[i][3] = drink;
+      user_answer[i][4] = cigarettes;
+    }
+    for (let i=0;i<5;i++){
+      for (let j=0;j<5;j++){
+        if (user_answer[i][j] != right_answer[i][j]){
+          flag = false;
+        }
+      }
+    }
+    if (flag){
+      alert("Правильно!")
+    }
+    else{
+      alert("Неправильно!")
+    }
+  }
+
+  function answer(){
+    let current_task = document.getElementById("current_task").textContent;
+    current_task = (Number(current_task[current_task.length - 1]) - 1) % 8
+    let right_answer = right_answers[current_task]
+    for (let i=0;i<5;i++){
+      var user_id = "house_" + (i+1);
+      document.querySelector('#'+user_id+"_nationality").value = right_answer[i][0];
+      document.querySelector('#'+user_id+"_color").value = right_answer[i][1];
+      document.querySelector('#'+user_id+"_animal").value = right_answer[i][2];
+      document.querySelector('#'+user_id+"_drink").value = right_answer[i][3];
+      document.querySelector('#'+user_id+"_cigarettes").value = right_answer[i][4];
+    }
+  }
+
+  function next_task(){
+    let next_task = document.getElementById("current_task").textContent;
+    next_task = (Number(next_task[next_task.length - 1])) % 8
+    text_next_task = "Задача №" + (next_task + 1)
+    document.querySelector('#current_task').textContent = text_next_task;
+    task_rules = rule_list[next_task]
+    for (let i=0;i<18;i++){
+      var user_id = "rule_" + i;
+      var rule = document.getElementById(user_id) 
+      rule.textContent = task_rules[i];
+      if (task_rules[i].length == 0){
+        rule.className = 'hide'
+      }
+      else{
+        rule.className = 'show'
+      }
+    }
+    for (let i=0;i<5;i++){
+      var user_id = "house_" + (i+1);
+      document.querySelector('#'+user_id+"_nationality").value = "noanswer";
+      document.querySelector('#'+user_id+"_color").value = "noanswer";
+      document.querySelector('#'+user_id+"_animal").value = "noanswer";
+      document.querySelector('#'+user_id+"_drink").value = "noanswer";
+      document.querySelector('#'+user_id+"_cigarettes").value = "noanswer";
+    }
+  }
+  </script>
+</body></html>
