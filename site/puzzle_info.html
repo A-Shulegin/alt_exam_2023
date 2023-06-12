@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Семейное древо">
+    <meta name="description" content="">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/puzzle_info_1.css" media="screen">
+<link rel="stylesheet" href="css/puzzle_info_2.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site2"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Главная.html" data-home-page-title="Главная" class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-15d8"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-align-center u-clearfix u-section-1" src="" id="sec-209a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.cc" class="u-border-hover-palette-2-base u-border-none u-btn u-button-style u-none u-btn-1"></a>
+        <a href="puzzle.html" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2">Назад</a>
+        <a href="https://github.com/A-Shulegin/alt_exam_2023" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">GitHub<br>
+        </a>
+        <h2 class="u-text u-text-default u-text-1">Загадка Эйнштейна</h2>
+        <h3 class="u-align-left u-text u-text-2">Условия задачи:<br>Известно, что 5 разных человек проживают в 5 разных домах разного цвета, курят 5 разных марок сигарет, выращивают 5 разных видов животных, пьют 5 разных видов напитков. Дома находятся друг за другом.<br>Дано некоторое количество условий и исходя из них необходимо определить каждую категорию всех домов.<br>
+          <br>В одной из наших задач следующие условия:<br>
+          <br>
+        </h3>
+        <ul class="u-align-left u-text u-text-3">
+          <li> Норвежец живет в первом доме</li>
+          <li>Англичанин живет в красном доме</li>
+          <li>Зеленый дом находится слева от белого</li>
+          <li>Датчанин пьет чай</li>
+          <li>Тот, кто курит Rothmans, живет рядом с тем, кто выращивает кошек</li>
+          <li>Тот, кто живет в желтом доме, курит Dunhill</li>
+          <li>Немец курит Marlboro</li>
+          <li>Тот, кто живет в центре, пьет молоко</li>
+          <li>Сосед того, кто курит Rothmans, пьет воду</li>
+          <li>Тот, кто курит Pall Mall, выращивает птиц</li>
+          <li>Швед выращивает собак</li>
+          <li>Норвежец живет рядом с синим домом</li>
+          <li>Тот, кто выращиает лошадей живет в си​нем доме</li>
+          <li>Тот, кто курит Philip Morris, пьет пиво</li>
+          <li>В зеленом доме пьют кофе</li>
+        </ul>
+        <h3 class="u-align-left u-text u-text-4">Для данной задачи необходимо несколько отношений, а именно:<br>&nbsp; &nbsp; - eq(a, b):<br>a и b имеют такое отношение, если они равны. Данное отношение реализовано в библиотеке kanren.<br>Позволят задать такое условие: Норвежец живет в первом доме.<br>&nbsp; &nbsp; - membero(a, b):<br> a и b имеют такое отношение, если a является частью списка b. Данное отношение также реализовано в библиотеке kanren.&nbsp;<br>Позволяет задать такое условие: Англичанин живет в красном доме.<br>&nbsp; &nbsp;- righto(a, b, c):<br>a, b и&nbsp; c имеют такое отношение, если a и b являются частью списка b, и a находится справа от b. С помощью данного отношения можно задать такое условие: Зеленый дом находится слева от белого.<br>&nbsp; &nbsp;- neighbours(a, b, c):<br>a, b и c имеют такое отношение, если a и b являются частью списка и либо a находится справа от b, либо b находится справа от a.<br>Позволяется задать такое условие: Сосед того, кто курит Rothmans, пьет воду
+        </h3>
+        <h3 class="u-text u-text-default u-text-5">Поиск решения</h3>
+        <h3 class="u-align-left u-text u-text-6">Для поиска решения конкретной задачи необходимо задать все условия с помощью отношений, описанных ранее и запустить код.</h3>
+        <img class="u-image u-image-default u-image-1" src="images_puzzle_info/image5.png" alt="" data-image-width="736" data-image-height="524">
+        <h3 class="u-align-left u-text u-text-7">Если условия задачи составлены корректно, то решение будет всего одно. Ниже приведен результат работы программы с заданными условиями.</h3>
+        <img class="u-image u-image-default u-image-2" src="images_puzzle_info/image6.png" alt="" data-image-width="962" data-image-height="134">
+        <h3 class="u-text u-text-default u-text-8">Генератор задач</h3>
+        <h3 class="u-align-left u-text u-text-9"> Генерация новой задачи происходит в 4 этапа:<br>&nbsp; &nbsp; - Случайная генерация списка домов<br>&nbsp; &nbsp; - Добавление случайного правила, соответствующего данному списку<br>&nbsp; &nbsp; - Проверка значимости правила<br>Например если список состоит из правил:<br>В 1 доме пьют воду, в 1 доме выращивают птиц, то правило в доме, где пьют воду, выращивают птиц незначимое и не несет никакой информации<br>&nbsp; &nbsp; - Повторение пункта 2 и 3, пока на основе выделенных правил нельзя будет найти однозначный ответ<br>
+          <br>Генератор задач, а также реализация решения выложены на гитхаб, ссылка находится в шапке данной страницы
+        </h3>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a887"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://habr.com/ru/companies/hsespb/articles/441114/"><h4>Реляционное программирование: боль, интерес и снова боль</h4></a>
+      </div></footer>
+  
+</body></html>

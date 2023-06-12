@@ -1,0 +1,42 @@
+Дом №1: Englishman milk fish Philip Morris white 
+Дом №2: Dane beer horses Dunhill red 
+Дом №3: German coffe dogs Marlboro green 
+Дом №4: Sweden water birds Rothmans blue 
+Дом №5: Norwegian tea cats Pall Mall yellow 
+1. В доме №1 пьют молоко
+2. Слева от дома, в котором содержат птиц, находится дом, в котором пьют кофе
+3. Дом, в котором живет швед, и дом зеленого цвета находятся по соседству
+4. В доме желтого цвета живет норвежец
+5. В доме, в котором курят Marlboro, пьют кофе
+6. Слева от дома, в котором содержат кошек, находится дом синего цвета
+7. Дом белого цвета и дом, в котором содержат лошадей, находятся по соседству
+8. В доме красного цвета содержат лошадей
+9. Слева от дома, в котором живет датчанин, находится дом, в котором курят Philip Morris
+10. В доме желтого цвета курят Pall Mall
+11. Дом, в котором пьют пиво, и дом, в котором содержат собак, находятся по соседству
+12. Слева от дома красного цвета находится дом, в котором содержат рыбок
+13. Дом, в котором курят Philip Morris, и дом, в котором содержат лошадей, находятся по соседству
+14. Дом зеленого цвета и дом, в котором курят Rothmans, находятся по соседству
+15. Дом, в котором живет немец, и дом, в котором пьют воду, находятся по соседству
+16. Дом, в котором курят Rothmans, и дом, в котором живет норвежец, находятся по соседству
+17. В доме, в котором курят Dunhill, живет датчанин
+18. Дом, в котором курят Philip Morris, и дом, в котором пьют пиво, находятся по соседству
+
+eq(House(drink="milk"), houses[0]),
+righto(House(animal="birds"), House(drink="coffe"), houses),
+neighbors(House(nationality="Sweden"), House(color="green"), houses),
+membero(House(nationality="Norwegian", color="yellow"), houses),
+membero(House(cigarettes="Marlboro", drink="coffe"), houses),
+righto(House(animal="cats"), House(color="blue"), houses),
+neighbors(House(color="white"), House(animal="horses"), houses),
+membero(House(color="red", animal="horses"), houses),
+righto(House(nationality="Dane"), House(cigarettes="Philip Morris"), houses),
+membero(House(color="yellow", cigarettes="Pall Mall"), houses),
+neighbors(House(drink="beer"), House(animal="dogs"), houses),
+righto(House(color="red"), House(animal="fish"), houses),
+neighbors(House(cigarettes="Philip Morris"), House(animal="horses"), houses),
+neighbors(House(color="green"), House(cigarettes="Rothmans"), houses),
+neighbors(House(nationality="German"), House(drink="water"), houses),
+righto(House(nationality="Norwegian"), House(cigarettes="Rothmans"), houses),
+membero(House(cigarettes="Dunhill", nationality="Dane"), houses),
+neighbors(House(cigarettes="Philip Morris"), House(drink="beer"), houses),

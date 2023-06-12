@@ -258,7 +258,8 @@ def variants_quantity(result):
         variants_quantity += empty[0] * empty[1] * empty[2] * empty[3] * empty[4]
     return(variants_quantity)
 
-task_number = 18
+print('Введите название файла: ')
+task_name = input()
 right_answer = [[], [], [], [], []]
 numbers = [1, 2, 3, 4, 5]
 for key in categories_value:
@@ -340,7 +341,7 @@ result = run(0, houses, goals)
 
         
 
-task_file = open(f"C:/main_alt/site_reworked/puzzle_tasks/task_{task_number}.txt", "w+")
+task_file = open(f"{task_name}.txt", "w+")
 for i in range(5):
     task_file.write(f'Дом №{i+1}: ')
     for category in categories.values():

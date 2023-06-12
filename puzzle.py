@@ -69,28 +69,23 @@ def variants_quantity(result):
 
 houses = vars(5)
 goals = conde((
-    eq(House(animal="cats"), houses[4]),
-    neighbors(House(nationality="Dane"), House(drink="water"), houses),
-    righto(House(animal="fish"), House(nationality="Sweden"), houses),
-    membero(House(animal="horses", nationality="Sweden"), houses),
-    eq(House(drink="milk"), houses[2]),
-    membero(House(animal="dogs", cigarettes="Philip Morris"), houses),
-    membero(House(drink="tea", nationality="German"), houses),
-    righto(House(cigarettes="Pall Mall"), House(color="yellow"), houses),
-    eq(House(cigarettes="Rothmans"), houses[2]),
-    righto(House(animal="cats"), House(nationality="Norwegian"), houses),
-    eq(House(nationality="German"), houses[0]),
-    righto(House(cigarettes="Marlboro"), House(drink="tea"), houses),
-    righto(House(drink="beer"), House(nationality="Norwegian"), houses),
-    righto(House(drink="water"), House(nationality="Englishman"), houses),
-    neighbors(House(cigarettes="Dunhill"), House(nationality="Dane"), houses),
-    righto(House(cigarettes="Dunhill"), House(color="red"), houses),
-    neighbors(House(nationality="German"), House(color="blue"), houses),
-    membero(House(color="white", drink="beer"), houses),
+    eq(House(nationality="Норвежец"), houses[0]),
+    membero(House(nationality="Англичанин", color="Красный"), houses),
+    righto(House(color="Белый"), House(color="Зеленый"), houses),
+    membero(House(nationality="Датчанин", drink="Чай"), houses),
+    neighbors(House(cigarettes="Rothmans"), House(animal="Кошки"), houses),
+    membero(House(color="Желтый", cigarettes="Dunhill"), houses),
+    membero(House(nationality="Немец", cigarettes="Marlboro"), houses),
+    eq(House(drink="Молоко"), houses[2]),
+    neighbors(House(cigarettes="Rothmans"), House(drink="Вода"), houses),
+    membero(House(cigarettes="Pall Mall", animal="Птицы"), houses),
+    membero(House(nationality="Швед", animal="Собаки"), houses),
+    neighbors(House(nationality="Норвежец"), House(color="Синий"), houses),
+    membero(House(animal="Лошади", color="Синий"), houses),
+    membero(House(cigarettes="Philip Morris", drink="Пиво"), houses),
+    membero(House(color="Зеленый", drink="Кофе"), houses)
 ))
 
 results = run(0, houses, goals)
-print(check_answer(results))
-if (check_answer(results)):
-    for i in range(5):
-        print(results[0][i])
+for i in range(5):
+    print(results[0][i])
